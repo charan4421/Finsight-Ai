@@ -1,0 +1,5 @@
+entity_id,name,country,currency,type,weight
+FINCORP-PL,FinCorp Poland Sp. z o.o.,PL,PLN,HQ+Manufacturing,0.45
+FINCORP-DE,FinCorp GmbH,DE,EUR,Distribution,0.28
+FINCORP-CZ,FinCorp s.r.o.,CZ,CZK,Logistics,0.15
+FINCORP-SE,FinCorp AB,SE,USD,Sales,0.12

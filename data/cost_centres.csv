@@ -1,0 +1,11 @@
+code,name,entity
+CC-MFG,Manufacturing,FINCORP-PL
+CC-LOG,Logistics,FINCORP-CZ
+CC-SALES-DE,Sales Germany,FINCORP-DE
+CC-SALES-SE,Sales Sweden,FINCORP-SE
+CC-IT,IT & Digital,FINCORP-PL
+CC-FIN,Finance & Accounting,FINCORP-PL
+CC-HR,Human Resources,FINCORP-PL
+CC-MGMT,Group Management,FINCORP-PL
+CC-RND,Research & Development,FINCORP-PL
+CC-PROC,Procurement,FINCORP-PL

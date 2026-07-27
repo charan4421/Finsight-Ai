@@ -1,0 +1,46 @@
+code,name,type,category
+1010,Cash and Cash Equivalents,Asset,Current Asset
+1020,Accounts Receivable,Asset,Current Asset
+1030,Inventory - Raw Materials,Asset,Current Asset
+1040,Inventory - Finished Goods,Asset,Current Asset
+1050,Prepaid Expenses,Asset,Current Asset
+1060,VAT Receivable,Asset,Current Asset
+1510,Property Plant & Equipment,Asset,Fixed Asset
+1520,Accumulated Depreciation,Asset,Fixed Asset
+1530,Intangible Assets,Asset,Fixed Asset
+1540,Right-of-Use Assets (IFRS 16),Asset,Fixed Asset
+2010,Accounts Payable,Liability,Current Liability
+2020,Short-term Bank Loans,Liability,Current Liability
+2030,Accrued Expenses,Liability,Current Liability
+2040,VAT Payable,Liability,Current Liability
+2050,Corporate Tax Payable,Liability,Current Liability
+2510,Long-term Bank Loans,Liability,Non-current Liability
+2520,Lease Liabilities (IFRS 16),Liability,Non-current Liability
+2530,Deferred Tax Liability,Liability,Non-current Liability
+3010,Share Capital,Equity,Equity
+3020,Retained Earnings,Equity,Equity
+3030,Current Year Profit/Loss,Equity,Equity
+4010,Revenue - Product Sales,Revenue,Operating Revenue
+4020,Revenue - Service Contracts,Revenue,Operating Revenue
+4030,Revenue - Logistics Services,Revenue,Operating Revenue
+4040,Revenue - Intercompany,Revenue,Operating Revenue
+4510,Other Income,Revenue,Non-operating Revenue
+4520,FX Gain,Revenue,Non-operating Revenue
+5010,Raw Materials Consumed,Expense,COGS
+5020,Direct Labour,Expense,COGS
+5030,Manufacturing Overhead,Expense,COGS
+5040,Logistics & Freight,Expense,COGS
+6010,Salaries & Benefits,Expense,OpEx
+6020,Rent & Facilities,Expense,OpEx
+6030,IT & Software Subscriptions,Expense,OpEx
+6040,Marketing & Sales,Expense,OpEx
+6050,Travel & Entertainment,Expense,OpEx
+6060,Professional Services,Expense,OpEx
+6070,Depreciation & Amortisation,Expense,OpEx
+6080,Insurance,Expense,OpEx
+6090,Utilities & Energy,Expense,OpEx
+6100,Repairs & Maintenance,Expense,OpEx
+7010,Interest Expense,Expense,Financial
+7020,Bank Charges,Expense,Financial
+7030,FX Loss,Expense,Financial
+8010,Corporate Income Tax,Expense,Tax

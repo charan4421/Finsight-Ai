@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+langchain
+langchain-groq
+langchain-core
+langchain-community
+chromadb
+streamlit
+plotly
+pandas
+numpy
+python-dotenv
+reportlab
+passlib
