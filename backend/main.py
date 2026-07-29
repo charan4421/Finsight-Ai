@@ -178,6 +178,22 @@ def get_budget(entity: Optional[str] = None):
         "data": bv.to_dict(orient="records")
     }
 
+from fastapi.responses import FileResponse
+import tempfile
+import os
+
+@app.get("/api/report/download")
+def download_report():
+    """Generate and download PDF report"""
+    from backend.report import generate_report
+    tmp_path = os.path.join(tempfile.gettempdir(), "finsight_report.pdf")
+    generate_report(tmp_path)
+    return FileResponse(
+        tmp_path,
+        media_type="application/pdf",
+        filename="FinSight_AI_Report.pdf"
+    )
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

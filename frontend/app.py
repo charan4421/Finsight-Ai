@@ -269,8 +269,29 @@ if page == "📊 Dashboard":
                 margin=dict(t=20,b=20), height=340,
             )
             st.plotly_chart(fig3, use_container_width=True)
+        st.markdown("<div class='section-header'>📄 Download Report</div>", unsafe_allow_html=True)
+        col1, col2 = st.columns([1,3])
+        with col1:
+            if st.button("📄 Download PDF Report", type="primary"):
+                import requests as req
+                response = req.get(f"{API_URL}/api/report/download")
+                if response.status_code == 200:
+                    st.download_button(
+                        label="💾 Save PDF",
+                        data=response.content,
+                        file_name="FinSight_AI_Report.pdf",
+                        mime="application/pdf"
+                    )
+           
+   
     else:
         st.error("Cannot connect to API. Run: python backend/main.py")
+        
+
+   
+
+
+   
 
 # AI CHAT
 elif page == "🤖 AI Chat":
