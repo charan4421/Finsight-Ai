@@ -1,0 +1,38 @@
+name: FinSight AI — Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: |
+          python -c "
+          import sys
+          sys.path.insert(0, '.')
+          from backend.core.database import db
+          db.load()
+          assert len(db.anomalies()) == 20
+          assert db.is_loaded == True
+          rev = db.revenue_by_year()
+          assert len(rev) > 0
+          print('All tests passed!')
+          "
+
+      - name: Deploy notification
+        run: echo "Tests passed - Render.com auto-deploys from main branch"
