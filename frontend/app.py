@@ -92,7 +92,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-API_URL = "http://localhost:8000"
+API_URL = "https://finsight-ai-p18w.onrender.com"
 
 @st.cache_data(ttl=30)
 def get_summary():
