@@ -12,6 +12,7 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
+
 load_dotenv()
 
 # Add project root to path
@@ -32,6 +33,7 @@ app.add_middleware(
     allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
+    allow_credentials=True,
 )
 
 # ── STARTUP ───────────────────────────────────────────────────────────────────
