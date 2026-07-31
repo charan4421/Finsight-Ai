@@ -94,6 +94,7 @@ st.markdown("""
 
 API_URL = "https://finsight-ai-p18w.onrender.com"
 
+
 @st.cache_data(ttl=30)
 def get_summary():
     try:
