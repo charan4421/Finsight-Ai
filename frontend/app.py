@@ -92,7 +92,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-API_URL = "https://finsight-ai-p18w.onrender.com"
+API_URL = "https://finsight-ai-backend-166c.onrender.com"
 
 
 @st.cache_data(ttl=30)
