@@ -121,7 +121,7 @@ def get_pl():
 
 def ask_ai(question):
     try:
-        r = requests.post(f"{API_URL}/api/ask", json={"question": question}, timeout=30)
+        r = requests.post(f"{API_URL}/api/ask", json={"question": question}, timeout=60)
         return r.json().get("answer", "No answer")
     except:
         return "Error connecting to API."

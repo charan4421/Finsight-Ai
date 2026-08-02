@@ -49,7 +49,7 @@ class QuestionRequest(BaseModel):
     question: str
 
 # ── ROUTES ────────────────────────────────────────────────────────────────────
-@app.get("/")
+@app.api_route("/", methods=["GET", "HEAD"])
 def root():
     return {
         "app": "FinSight AI",
@@ -57,7 +57,7 @@ def root():
         "status": "running",
     }
 
-@app.get("/health")
+@app.api_route("/health", methods=["GET", "HEAD"])
 def health():
     return {
         "status": "healthy",
